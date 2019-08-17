@@ -20,10 +20,8 @@ func main() {
 	fmt.Println("Starting to do a unary RPC")
 
 	req := &calculatorpb.SumRequest{
-		Sum: &calculatorpb.Sum{
-			FirstNumber:  10,
-			SecondNumber: 20,
-		},
+		FirstNumber:  10,
+		SecondNumber: 20,
 	}
 
 	res, err := c.Sum(context.Background(), req)

@@ -3,13 +3,9 @@ syntax = "proto3";
 package calculator;
 option go_package = "calculatorpb";
 
-message Sum {
+message SumRequest {
     int32 first_number = 1;
     int32 second_number = 2;
-}
-
-message SumRequest {
-    Sum sum = 1;
 }
 
 message SumResponse {
